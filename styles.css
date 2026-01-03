@@ -1,0 +1,607 @@
+
+/* MINIMAL TEMPLATE CSS - COMPLETE */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body.template-minimal {
+    font-family: 'IBM Plex Sans', 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.7;
+    color: #000000;
+    background: #ffffff;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* HEADER */
+.minimal-header {
+    padding: 25px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+    background: #ffffff;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.minimal-header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-minimal {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 22px;
+    font-weight: 600;
+    color: #000000;
+}
+
+.logo-minimal img {
+    height: 40px;
+}
+
+.minimal-header nav {
+    display: flex;
+    gap: 35px;
+    align-items: center;
+}
+
+.minimal-header nav a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 15px;
+    position: relative;
+    transition: color 0.3s;
+}
+
+.minimal-header nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background: #000000;
+    transition: width 0.3s;
+}
+
+.minimal-header nav a:hover {
+    color: #000000;
+}
+
+.minimal-header nav a:hover::after {
+    width: 100%;
+}
+
+.header-socials {
+    display: flex;
+    gap: 15px;
+    margin-left: 25px;
+}
+
+.header-socials a {
+    color: #000000;
+    opacity: 0.7;
+    transition: opacity 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-socials a:hover {
+    opacity: 1;
+}
+
+.header-socials svg {
+    width: 22px;
+    height: 22px;
+    fill: currentColor;
+}
+
+/* HERO */
+.hero-minimal {
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+.hero-content-minimal h1 {
+    font-size: 52px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero-content-minimal .subtitle {
+    font-size: 20px;
+    color: #333333;
+    margin-bottom: 20px;
+    letter-spacing: 0.5px;
+}
+
+.hero-content-minimal .description {
+    font-size: 17px;
+    color: #000000;
+    opacity: 0.8;
+    max-width: 650px;
+    margin: 0 auto 40px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.btn-minimal-primary {
+    background: #000000;
+    color: white;
+    padding: 14px 35px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.btn-minimal-primary:hover {
+    background: #333333;
+    transform: translateY(-2px);
+    color: white;
+}
+
+.btn-minimal-secondary {
+    background: transparent;
+    color: #000000;
+    padding: 14px 35px;
+    border: 1px solid #000000;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 15px;
+    transition: all 0.3s;
+    display: inline-block;
+}
+
+.btn-minimal-secondary:hover {
+    background: rgba(0,0,0,0.03);
+    color: #000000;
+}
+
+/* SECTIONS */
+section {
+    padding: 80px 0;
+}
+
+.section-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-header h2 {
+    font-size: 40px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 15px;
+}
+
+.divider {
+    width: 60px;
+    height: 3px;
+    background: #000000;
+    margin: 0 auto;
+}
+
+/* ABOUT */
+.about-minimal {
+    background: rgba(0,0,0,0.02);
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    max-width: 850px;
+    margin: 0 auto;
+}
+
+.about-main {
+    margin-bottom: 20px;
+}
+
+.about-main p {
+    font-size: 17px;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: #000000;
+}
+
+.about-metrics {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.metric {
+    text-align: center;
+    padding: 25px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    transition: transform 0.3s;
+}
+
+.metric:hover {
+    transform: translateY(-3px);
+}
+
+.metric-value {
+    font-size: 32px;
+    font-weight: 600;
+    color: #000000;
+    margin-bottom: 8px;
+}
+
+.metric-label {
+    font-size: 14px;
+    color: #000000;
+    opacity: 0.7;
+}
+
+/* FEATURES */
+.features-minimal {
+    background: #ffffff;
+}
+
+.features-list {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.feature-minimal {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 30px;
+    padding: 35px;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+}
+
+.feature-minimal:hover {
+    transform: translateX(5px);
+}
+
+.feature-number {
+    font-size: 48px;
+    font-weight: 600;
+    color: #000000;
+    opacity: 0.3;
+    line-height: 1;
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.feature-content h3 {
+    font-size: 22px;
+    color: #000000;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+
+.feature-content p {
+    color: #000000;
+    opacity: 0.8;
+    line-height: 1.7;
+    font-size: 16px;
+}
+
+/* TOKENOMICS */
+.tokenomics-minimal {
+    background: rgba(0,0,0,0.02);
+}
+
+.token-info {
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    margin-bottom: 40px;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.token-detail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.token-detail:last-child {
+    border-bottom: none;
+}
+
+.detail-label {
+    font-weight: 500;
+    color: #000000;
+    font-size: 16px;
+}
+
+.detail-value {
+    color: #000000;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.distribution-minimal {
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.distribution-item {
+    margin-bottom: 25px;
+}
+
+.distribution-item:last-child {
+    margin-bottom: 0;
+}
+
+.dist-label {
+    font-size: 15px;
+    margin-bottom: 10px;
+    font-weight: 500;
+    color: #000000;
+}
+
+.dist-bar {
+    height: 12px;
+    background: #000000;
+    border-radius: 6px;
+    transition: width 1s ease;
+}
+
+/* ROADMAP */
+.roadmap-minimal {
+    background: #ffffff;
+}
+
+.roadmap-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 35px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.roadmap-phase {
+    background: white;
+    padding: 35px;
+    border-radius: 8px;
+    border-left: 4px solid #000000;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.06);
+    transition: transform 0.3s;
+}
+
+.roadmap-phase:hover {
+    transform: translateY(-3px);
+}
+
+.phase-header {
+    margin-bottom: 20px;
+}
+
+.phase-period {
+    display: inline-block;
+    background: #000000;
+    color: white;
+    padding: 6px 15px;
+    border-radius: 4px;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+.roadmap-phase h3 {
+    font-size: 22px;
+    color: #000000;
+    font-weight: 600;
+    margin: 0;
+}
+
+.roadmap-phase ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.roadmap-phase li {
+    padding: 10px 0;
+    padding-left: 25px;
+    position: relative;
+    color: #000000;
+    opacity: 0.9;
+    font-size: 15px;
+}
+
+.roadmap-phase li::before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: #000000;
+    font-weight: 700;
+}
+
+/* FOOTER */
+.footer-minimal {
+    background: rgba(0,0,0,0.03);
+    padding: 50px 0 30px;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    border-bottom: 1px solid rgba(0,0,0,0.08);
+}
+
+.footer-brand h3 {
+    font-size: 24px;
+    color: #000000;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.footer-brand p {
+    color: #000000;
+    opacity: 0.7;
+    font-size: 14px;
+    margin: 0;
+}
+
+.footer-links {
+    display: flex;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #000000;
+    text-decoration: none;
+    opacity: 0.8;
+    font-weight: 400;
+    transition: opacity 0.3s;
+}
+
+.footer-links a:hover {
+    opacity: 1;
+    color: #000000;
+}
+
+.footer-bottom {
+    text-align: center;
+}
+
+.footer-bottom p {
+    color: #000000;
+    opacity: 0.7;
+    font-size: 14px;
+    margin: 0;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    .minimal-header .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .minimal-header nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+    
+    .header-socials {
+        margin-left: 0;
+    }
+    
+    .hero-content-minimal h1 {
+        font-size: 36px;
+    }
+    
+    .hero-content-minimal .subtitle {
+        font-size: 18px;
+    }
+    
+    .hero-content-minimal .description {
+        font-size: 16px;
+    }
+    
+    .hero-actions {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .btn-minimal-primary,
+    .btn-minimal-secondary {
+        width: 100%;
+        max-width: 300px;
+        text-align: center;
+    }
+    
+    .about-metrics {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+    
+    .feature-minimal {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .feature-number {
+        font-size: 36px;
+        text-align: center;
+    }
+    
+    .roadmap-list {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-top {
+        flex-direction: column;
+        gap: 25px;
+        text-align: center;
+    }
+    
+    .section-header h2 {
+        font-size: 32px;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero-content-minimal h1 {
+        font-size: 28px;
+    }
+    
+    .about-metrics {
+        grid-template-columns: 1fr;
+    }
+    
+    .container {
+        width: 95%;
+        padding: 0 15px;
+    }
+}
